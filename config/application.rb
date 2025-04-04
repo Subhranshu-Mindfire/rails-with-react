@@ -23,5 +23,11 @@ module RailsWithReact
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    excluded_routes = ->(env) { !env["PATH_INFO"].match(%r{^/api}) }
+    config.middleware.use OliveBranch::Middleware,
+                      inflection:       "camel",
+                      exclude_params:   excluded_routes,
+                      exclude_response: excluded_routes
   end
 end
