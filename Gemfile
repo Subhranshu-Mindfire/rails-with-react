@@ -24,6 +24,9 @@ gem 'olive_branch'
 
 gem 'jwt'
 
+gem 'dotenv-rails', groups: [:development, :test]
+
+
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
 # gem "kredis"
