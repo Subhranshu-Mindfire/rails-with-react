@@ -1,0 +1,2 @@
+class DummyTable < ApplicationRecord 
+end
