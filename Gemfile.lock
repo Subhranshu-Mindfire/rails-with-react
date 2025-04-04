@@ -121,6 +121,8 @@ GEM
       actionview (>= 5.0.0)
       activesupport (>= 5.0.0)
     json (2.10.2)
+    jwt (2.10.1)
+      base64
     language_server-protocol (3.17.0.4)
     lint_roller (1.1.0)
     logger (1.7.0)
@@ -302,6 +304,7 @@ DEPENDENCIES
   error_highlight (>= 0.4.0)
   importmap-rails
   jbuilder
+  jwt
   olive_branch
   pg (~> 1.1)
   puma (>= 5.0)

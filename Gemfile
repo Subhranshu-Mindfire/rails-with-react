@@ -22,6 +22,7 @@ gem 'rack-cors'
 
 gem 'olive_branch'
 
+gem 'jwt'
 
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
