@@ -16,7 +16,8 @@ Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
       get '/users', to: 'users#index'
-      post '/login', to: 'session#login'
+      post '/login', to: 'sessions#login'
+      post '/signup', to: 'regittrations#signup'
     end
   end
 end
