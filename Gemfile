@@ -22,6 +22,10 @@ gem 'rack-cors'
 
 gem 'olive_branch'
 
+gem 'jwt'
+
+gem 'dotenv-rails', groups: [:development, :test]
+
 
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
@@ -36,6 +40,10 @@ gem "tzinfo-data", platforms: %i[ mswin mswin64 mingw x64_mingw jruby ]
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
 
+gem 'whenever'
+
+
+
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
 
@@ -48,6 +56,8 @@ group :development, :test do
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
+
+  gem "pry-rails"
 end
 
 group :development do
