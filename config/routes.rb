@@ -17,7 +17,8 @@ Rails.application.routes.draw do
     namespace :v1 do
       get '/users', to: 'users#index'
       post '/login', to: 'sessions#login'
-      post '/signup', to: 'regittrations#signup'
+      post '/signup', to: 'registrations#signup'
+      post '/logout', to: 'sessions#logout'
     end
   end
 end
